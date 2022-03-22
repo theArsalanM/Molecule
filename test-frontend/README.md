@@ -1,4 +1,13 @@
 # test-frontend
+This project was created from VueCLI, using Vue 3.
+
+It is powered by 3 components, and a central Data Service to make API calls. 
+
+Apart from that, RDKit-JS has also been implemneted as a raw JavaScript library, and making direct calls to it.
+
+By default pagination limit is set to 10, with buttons to navigate across pages.
+
+The template is very minimalistic and just viewing the data in a structured format.
 
 ## Project setup
 ```
