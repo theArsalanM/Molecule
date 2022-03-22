@@ -10,6 +10,7 @@ class MoleculeViewSet(ReadOnlyModelViewSet):
     """
     Provides detail view of a single molecule
     Lists all molecules using Standard Pagination Class
+    Since we're only reading data, so used ReadOnly Model ViewSet
     """
     queryset = Molecule.objects.all()
     serializer_class = MoleculeSerializer

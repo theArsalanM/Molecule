@@ -7,6 +7,12 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
       <script src="https://unpkg.com/@rdkit/rdkit/Code/MinimalLib/dist/RDKit_minimal.js"></script>
+      <script>
+          window.initRDKitModule()
+              .then(function (RDKit){
+                  window.RDKit = RDKit;
+              })
+      </script>
   </head>
   <body>
     <noscript>

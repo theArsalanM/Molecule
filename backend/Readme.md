@@ -31,3 +31,7 @@ Some basic tests can be found in tests.py file. The project has 86% coverage
 
 ## Docker
 The whole project is closed in a Docker container with Python3.9
+
+To run backend at 8000 port
+
+```docker-compose up```
