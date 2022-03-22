@@ -34,6 +34,8 @@
     </div>
     </div>
 
+  <div id="example-output"></div>
+
 </template>
 
 <script>
@@ -47,9 +49,17 @@ export default {
     }
   },
   mounted() {
+    window.initRDKitModule()
+        .then(function (RDKit){
+          window.RDKit = RDKit;
+        })
     DataService.get(this.$route.params.id)
         .then(response => {
           this.responseData = response.data;
+          const mol = window.RDKit.get_mol(response.data.structure);
+          const dest = document.getElementById("example-output");
+          const svg = mol.get_svg();
+          dest.innerHTML = "<div id='drawing'>" + svg + "</div>";
         })
         .catch(e => {
           console.log(e);
