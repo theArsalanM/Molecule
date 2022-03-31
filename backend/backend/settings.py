@@ -15,18 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'PICKED_FROM_LOCAL_SETTINGS'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = []
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -133,7 +121,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 50
 }
 
-try:
-    from .local_settings import *
-except BaseException as e:
-    raise Exception("Create a local settings file local_settings.template")
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+SECRET_KEY = 'django-insecure-)yej6e_u5*pzjxhpmnooe55m)z!2+g96o*f6fj=z2ybvw@%c40'

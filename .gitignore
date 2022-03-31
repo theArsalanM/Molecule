@@ -1,6 +1,6 @@
-local_settings.py
-database.db
 .idea
 .coverage
 node_modules
 .DS_Store
+*.pyc
+__pycache__/
