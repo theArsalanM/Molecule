@@ -34,7 +34,8 @@ Some basic tests can be found in tests.py file. The project has 86% coverage
 ## Docker
 The whole project is closed in a Docker container with Python3.9
 
-To run backend at 8000 port, move to backend directory and simply run
+To run backend at `8000` port, move to backend directory and simply run
 
 ```docker-compose up```
+
 Please make sure Docker app is up and running before executing this command

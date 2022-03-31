@@ -15,6 +15,9 @@ npm install
 ```
 
 ### Compiles and hot-reloads for development
+
+This would run the development environment by default on port `8080`
+
 ```
 npm run serve
 ```
